@@ -1,0 +1,24 @@
+.hero-title, p {
+    text-align: center;
+}
+
+
+ol li:hover {
+    background-color: white;
+}
+
+.sites:active, a:active {
+    color: white;
+}
+
+ol li {
+    border: solid;
+}
+
+body {
+    background-color: rgb(119, 113, 112);
+}
+
+ol, ul {
+    list-style: none;
+}
