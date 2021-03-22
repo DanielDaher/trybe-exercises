@@ -11,8 +11,13 @@ ol li:hover {
     color: white;
 }
 
+ol {
+    margin-left: 35%;
+    text-align: center;
+}
 ol li {
-    border: solid;
+    
+    width: 30%;
 }
 
 body {
