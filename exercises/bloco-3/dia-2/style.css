@@ -1,0 +1,33 @@
+h1 {
+    color: orange;
+    font-size: 65px;
+    font-family: sans-serif;
+    }
+    .colours-list {
+        background-color: orchid;
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 3em;
+    } 
+    body {
+        font-size: 16px;
+    }
+    .list-of-colors {
+        font-style: italic;
+        line-height: 20px;
+        text-align: justify;
+        text-decoration: underline;
+    }   
+    #amarelo {
+        background-color: yellow;
+    }
+    #vermelho {
+        background-color: tomato;
+        color: white;
+    }
+    #marrom {
+        background-color: brown;
+        color: white;
+    }
