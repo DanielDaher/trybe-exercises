@@ -33,7 +33,7 @@ if (a > b && a > c) {
 }
  */
 //exercício 4
-let a = -1;
+/* let a = -1;
 
 if (a > 0) {
     console.log('positive');
@@ -41,4 +41,21 @@ if (a > 0) {
     console.log('negative');
 } else {
     console.log('zero');
+} */
+
+//exercício 5
+let a = 90;
+let b = 50;
+let c = 50;
+let soma = a + b + c;
+let positiveAngles = a > 0 && b > 0 && c > 0;
+
+if (positiveAngles){
+    if (soma ===180) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+} else {
+    console.log ('angulo inválido');
 }
