@@ -44,7 +44,7 @@ if (a > 0) {
 } */
 
 //exercício 5
-let a = 90;
+/* let a = 90;
 let b = 50;
 let c = 50;
 let soma = a + b + c;
@@ -58,4 +58,30 @@ if (positiveAngles){
     }
 } else {
     console.log ('angulo inválido');
+} */
+
+//exercício 6
+let peçaDeXadrez = 'RAINHA';
+switch (peçaDeXadrez.toLowerCase()) {
+    case 'rei':
+        console.log('horizontal,vertical e diagonal - uma casa de cada vez');
+        break;
+    case 'rainha':
+        console.log('horizonta, vertical e diagonal - não pode pular outras peças');
+        break;
+    case 'bispo':
+        console.log('somente diagonal - não pode pular outras peças');
+        break;
+    case 'cavalo':
+        console.log('pode pular outras peças - se move em "L", duas horizontais e uma vertical, ou vice-versa');
+        break;
+    case 'torre':
+        console.log('toda a horizontal ou vertical - não pode pular outras peças');
+        break;
+    case 'peão':
+        console.log('apenas uma casa para frente, exceto em seu primeiro movimento no jogo, quando PODE avançar duas casas');
+        break;
+        default:
+        console.log('error - peça inválida');
+        break;
 }
