@@ -45,6 +45,7 @@ for (let index = 0; index < numbers.length; index += 1) {
 }
 console.log(bigger); */
 
+//exercicio 6
 let total = 0;
 for (let index = 0; index < numbers.length; index += 1) {
     if (numbers[index] % 2 !== 0) {
