@@ -46,7 +46,7 @@ for (let index = 0; index < numbers.length; index += 1) {
 console.log(bigger); */
 
 //exercicio 6
-let total = 0;
+/* let total = 0;
 for (let index = 0; index < numbers.length; index += 1) {
     if (numbers[index] % 2 !== 0) {
         total += 1;
@@ -57,4 +57,12 @@ if (total === 0) {
     console.log('nenhum valor ímpar encontrado');
 } else {
     console.log(total);    
+} */
+//exercicio 7
+let total = 1000;
+for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] < total) {
+        total = numbers[index];
 }
+}
+console.log(total);
