@@ -36,11 +36,24 @@ if (total > 20) {
 } */
 
 //exercicio 5
-let bigger = 0;
+/* let bigger = 0;
 for (let index = 0; index < numbers.length; index += 1) {
     if (numbers[index] > bigger) {
         bigger = numbers[index];
     }
     
 }
-console.log(bigger);
+console.log(bigger); */
+
+let total = 0;
+for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] % 2 !== 0) {
+        total += 1;
+    }
+}
+
+if (total === 0) {
+    console.log('nenhum valor ímpar encontrado');
+} else {
+    console.log(total);    
+}
