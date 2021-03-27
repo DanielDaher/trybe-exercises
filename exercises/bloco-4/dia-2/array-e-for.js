@@ -70,9 +70,16 @@ console.log(total); */
 //exercicio 8
 // criar um array que recebe valores de um FOR;
 let numbers = [];
+
 //criar um FOR que percorra 1 a 25 e envie os valores para um array
-for (index = 1; index <26; index += 1) {
+/* for (index = 1; index <26; index += 1) {
     numbers.push(index);
 }
 //imprimir array
+console.log(numbers); */
+
+//exercicio 9
+for (index = 1; index <26; index += 1) {
+    numbers.push(index / 2);
+}
 console.log(numbers);
