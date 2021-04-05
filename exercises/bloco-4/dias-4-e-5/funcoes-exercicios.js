@@ -1,5 +1,5 @@
 //exercicio 1
-function viceVersa (nome) {
+/* function viceVersa (nome) {
     let soletrando = nome.split('');
     let verification = true;
     for (let index in soletrando) {
@@ -21,4 +21,14 @@ let teste4 = viceVersa('tenet');
 
 console.log(teste2);
 console.log(teste3);
-console.log(teste4);
+console.log(teste4); */
+
+let teste = [10, 20, 30];
+total = 0;
+for (let index in teste) {
+    if (teste[index] > total) {
+        total = total + teste[index];
+    }
+    console.log(total);
+    
+}

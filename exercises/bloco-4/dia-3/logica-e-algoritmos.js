@@ -17,10 +17,25 @@ for (i = 0; i< n; i += 1) {
 //exercicio 2
 // mesmo do 1, so que imprima um triângulo retângulo
 //com 5 asteriscos de base
-let n = 5;
+/* let n = 5;
 let x = '*';
 
 for (i = 0; i< n; i += 1) {
     console.log(x);
     x += '*';
+} */
+
+//exercicio 3
+//inverta o lado do triângulo.
+let n = 5;
+let x = '*';
+let y = ' ';
+/* console.log(y+y+n); */
+
+for (i = 1; i < n; i += 1) {
+    if (i < n) {
+        y += ' ';
+    } else {
+        n -= 1;
+    }
 }
