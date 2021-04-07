@@ -100,6 +100,37 @@
 		leftDiv.classList.add('left-content');
 	 }
 	 divLeftContent();
+
+	 //Exercicio 6
+	 function divRightContent() {
+		let divMainLocation = document.querySelector('.main-content');
+		let rightDiv = document.createElement('div');
+		divMainLocation.appendChild(rightDiv);
+		rightDiv.classList.add('right-content');
+	 }
+	 divRightContent();
+
+	 //Exercicio 7
+	 function image() {
+		 let picture = document.createElement('img');
+		 picture.classList.add('small-image');
+		 picture.src = 'https://picsum.photos/200';
+		 let leftDivLocation = document.querySelector('.left-content');
+		 leftDivLocation.appendChild(picture);
+	 }
+	 image();
+
+	 //Exercício 8
+	 function ulList() {
+		 let lista = document.createElement('ul');
+		 const num = ['zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+		 for (let i = 1; i < 11; i += 1) {
+			lista.innerHTML += '<li>' + num[i] + '</li>';
+		 }
+		 let rightDivLocation = document.querySelector('.right-content');
+		 rightDivLocation.appendChild(lista);
+	 }
+	 ulList();
     </script>
   </body>
 </html>
