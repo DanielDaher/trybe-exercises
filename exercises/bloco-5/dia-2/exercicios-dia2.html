@@ -83,6 +83,14 @@
 		}
 		createDivCenter();
 
+	 //Exercicio 4
+	 function pTag() {
+		 let parag = document.createElement('p');
+		 parag.innerText = 'Parágrafo filho do Div Center';
+		let divCenterLocation = document.querySelector('.center-content');
+		divCenterLocation.appendChild(parag);
+	 }
+	 pTag();
     </script>
   </body>
 </html>
