@@ -62,8 +62,8 @@
 
       let sobreviventes = pai.children;
       for (let index = 0; index < sobreviventes.length; index += 1) {
-        if (index > 1) {
-          pai.removeChild(sobreviventes[index]);
+        if (index !== 1) {
+          sobreviventes[index].remove();
         }
       }
   </script>

@@ -27,6 +27,11 @@
       .main-content .center-content p {
         font-style: italic;
       }
+
+      body {
+        background-color: gray;
+      }
+      
     </style>
   </head>
   <body>
@@ -51,6 +56,52 @@
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+       function newText() {
+        let bio = document.getElementsByTagName("p");
+        bio[0].innerText = 'Trabahando e recebendo MILHÕES';
+       };
+       newText();
+
+       function newColor() {
+        let changeColor = document.getElementsByClassName("main-content");
+        changeColor[0].style.backgroundColor = 'rgb(76,164,109)';
+       };
+       newColor();
+
+       function centerColor() {
+        let colorCenter = document.getElementsByClassName('center-content');
+        colorCenter[0].style.backgroundColor = 'white';
+       }
+      
+       centerColor();
+
+       function theTitle() {
+        let newTitle = document.getElementsByTagName('h1');
+        newTitle[0].innerText = 'Exercício 5.1 - JavaScript';
+       }
+       theTitle();
+
+       function upperCase() {
+        let bio = document.getElementsByTagName("p");
+        for (let i = 0; i < bio.length; i += 1) {
+          bio[i].innerText = bio[i].innerText.toUpperCase();
+        }
+       }
+
+       upperCase();
+
+       function pTagContent() {
+        let bio = document.getElementsByTagName("p");
+        for (let i = 0; i < bio.length; i += 1) {
+          console.log(bio[i]);
+        }
+       }
+       pTagContent();
+
+       function highLigth() {
+        
+       }
+       highLigth();
     </script>
   </body>
 </html>
