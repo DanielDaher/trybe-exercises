@@ -73,6 +73,16 @@
 			document.body.appendChild(newDiv);
     }
 		createNewDivMain();
+
+		//Exercicio 3
+		function createDivCenter() {
+			let divMainLocation = document.querySelector('.main-content');
+			let newDiv = document.createElement('div');
+			newDiv.classList.add('center-content');
+			divMainLocation.appendChild(newDiv);
+		}
+		createDivCenter();
+
     </script>
   </body>
 </html>
