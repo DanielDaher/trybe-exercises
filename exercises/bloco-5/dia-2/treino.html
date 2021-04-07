@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="paiDoPai">
+    <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+      Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+  </div>
+  <script>
+      let inicio = document.querySelector("#elementoOndeVoceEsta");
+      inicio.parentNode.style.color = 'blue';
+      /* inicio.firstElementChild.innerText = 'XABLAU';
+      inicio.firstElementChild.style.color = 'green'; */
+      let filho = inicio.firstElementChild;
+      filho.innerText = 'Sou o primeiro filho de INICIO';
+      
+
+
+      let pai = document.querySelector("#pai");
+      pai.firstElementChild.innerText = 'teste';
+      inicio.previousElementSibling.innerText = 'OI';
+
+      inicio.style.backgroundColor = 'green';
+
+      let atention = pai.firstElementChild.nextElementSibling.nextSibling;
+
+      let brother = document.createElement('div');
+      brother.innerText = 'Sou irmão de OI';
+      pai.appendChild(brother);
+
+      let child = document.createElement('div');
+      child.innerText = 'Sou FILHO de OI'
+      inicio.appendChild(child);
+
+      let neto = document.createElement('div');
+      neto.innerText = 'Sou neto do INICIO';
+      inicio.firstElementChild.appendChild(neto);
+      neto.classList.add('neto');
+
+      /* let herdeiros = pai.children;
+
+    
+      for (let index = 0; index < herdeiros.length; index += 1) {
+          if (herdeiros[index] !== pai) {
+              pai.removeChild(herdeiros[index]);
+          }
+      } */
+
+      let sobreviventes = pai.children;
+      for (let index = 0; index < sobreviventes.length; index += 1) {
+        if (index > 1) {
+          pai.removeChild(sobreviventes[index]);
+        }
+      }
+  </script>
+</body>
+</html>
