@@ -31,10 +31,12 @@ function createDaysOfTheWeek() {
       let days = document.querySelectorAll('.day');
       for (let index = 0; index < days.length; index += 1) {
         let day = days[index].innerText;
-        if (day === 24| day === 25| day === 31) {
+        if (day === '24'| day === '31') {
             days[index].classList.add('holiday');
-        } else if (day === 4| day === 11| day === 18| day === 25) {
+        } else if (day === '4'| day === '11'| day === '18') {
             days[index].classList.add('friday');
+        } else if (day === '25') {
+            days[index].classList.add('holiday', 'friday');
         }
       }
   }
