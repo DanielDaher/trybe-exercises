@@ -10,3 +10,30 @@ function createStates() {
   }
 }
 createStates();
+
+function settingData() {
+  let button = document.querySelector('button');
+  button.addEventListener('click', function (event) {
+    event.preventDefault();
+    let consolidado = document.createElement('div');
+    let result = document.querySelector('.results');
+    result.classList.add('nova');
+    result.appendChild(consolidado);
+    let inputs = document.querySelectorAll('input');
+    for (let index = 0; index < inputs.length; index += 1) {
+      let info = document.createElement('p');
+      consolidado.appendChild(info);
+      info.innerText = inputs[index].name + ': ' + inputs[index].value;
+    }
+  })
+}
+settingData();
+
+function clearDiv() {
+  const buttons = document.querySelector('.removedor');
+  buttons.addEventListener('click', function () {
+    const infos = document.querySelector('.nova');
+    infos.remove();
+  })
+}
+clearDiv();
