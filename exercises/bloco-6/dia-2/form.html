@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <span class="icon">
+    <i class="fas fa-home"></i>
+    </span> 
+  <div class="results"></div>
+  <form method="GET">
+
+  <div class="field space">
+    <label class="label" for="nome"> Nome</label>
+    <div class="control">
+      <input class="input" type="text" id="nome" name="nome" maxlength="40" required>
+    </div>
+  </div>
+  
+  <div class="field space">
+    <label class="label" for="email">Email</label>
+    <div class="control has-icons-left has-icons-right">
+      <input class="input is-danger" type="email" id="email" 
+      maxlength="50" name="email" placeholder="insira seu email" 
+      value="email@" required>
+      <span class="icon is-small is-left">
+        <i class="fas fa-envelope"></i>
+      </span>
+      <span class="icon is-small is-right">
+        <i class="fas fa-exclamation-triangle"></i>
+      </span>
+    </div>
+  </div>
+
+      <label for="cpf">CPF</label>
+      <input type="text" id="cpf" maxlength="11" name="CPF" required>
+      <label for="endereco">Endereço</label>
+      <input type="text" id="endereco" maxlength="200" name="Adress" required>
+      <label for="city">Cidade</label>
+      <input type="text" id="city" maxlength="28" name="city" required>
+      <label for="state">Estado</label>
+      <select id="state" name="state" required></select>
+      <label for="residencia">Tipo </label>
+      <input type="radio" id="residencia" name="residencia" required> Casa 
+      <input type="radio" id="residencia" name="residencia" required> Apartamento
+      
+    
+    
+      <label for="curriculum">Resumo do Currículo</label>
+      <textarea maxlength="1000" id="curriculum" name="currículo" required></textarea>
+      <label for="cargum">Cargo</label>
+      <input type="text" id="cargum" name="cargo" maxlength="40" required>
+      <label for="description">Descrição do cargo</label>
+      <input type="text" maxlength="500" id="description" name="decription" required>
+      <label for="begin">Data de Início</label>
+      <input type="date" name="start" required>
+      <button>Enviar</button>
+      <button type="reset" class="removedor">Reset</button>
+    
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

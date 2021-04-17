@@ -1,0 +1,17 @@
+/* input, select {
+  margin: 10px;
+  display: block;
+}
+
+span {
+  display: inline;
+}
+
+textarea {
+  display: block;
+} */
+
+.space {
+  width: 50%;
+  margin: 0 auto;
+}
