@@ -17,7 +17,7 @@ function settingData() {
     event.preventDefault();
     let consolidado = document.createElement('div');
     let result = document.querySelector('.results');
-    result.classList.add('nova');
+    consolidado.classList.add('nova');
     result.appendChild(consolidado);
     let inputs = document.querySelectorAll('input');
     for (let index = 0; index < inputs.length; index += 1) {

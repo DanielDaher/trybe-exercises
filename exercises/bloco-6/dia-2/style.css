@@ -15,3 +15,11 @@ textarea {
   width: 50%;
   margin: 0 auto;
 }
+
+body {
+  background-color: rgb(146, 192, 146);
+}
+
+.footer {
+  background-color: rgb(146, 192, 146);
+}
