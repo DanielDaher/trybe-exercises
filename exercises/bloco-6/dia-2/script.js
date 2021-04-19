@@ -11,10 +11,22 @@ function createStates() {
 }
 createStates();
 
+function validateInputs() {
+  let input = document.querySelectorAll('input')
+  for (let index = 0; index < input.length; index += 1) {
+    if (input[index].value == '' || input[index].value == null) {
+      alert('Preencha os campos obrigatórios');
+      document.querySelector('.nova').remove();
+      return false;
+    }
+}
+}
+
 function settingData() {
   let button = document.querySelector('button');
   button.addEventListener('click', function (event) {
     event.preventDefault();
+    validateInputs();
     let consolidado = document.createElement('div');
     let result = document.querySelector('.results');
     consolidado.classList.add('nova');
