@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="results"></div>
+  <h1 class="subtitle is-1">FORMULÁRIO</h1>
+  <div class="space results"></div>
   <form method="GET">
 
   <div class="field space">
@@ -98,7 +99,7 @@
       <div class="field space">
         <label class="label" for="begin">Data de Início</label>
         <div class="control">
-          <input class="input" type="date" name="start" required>
+          <input class="input" type="date" id="data" name="start" required>
         </div>
       </div>
       
@@ -117,7 +118,11 @@
       </p>
     </div>
   </footer>
-  
+  <!-- 
+  <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+<script src="dist/js/DatePickerX.min.js">
+  document.getElementById('data').DatePickerX.init();
+</script> -->
   <script src="script.js"></script>
 </body>
 </html>
