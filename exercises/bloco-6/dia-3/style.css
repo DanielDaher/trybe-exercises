@@ -7,6 +7,10 @@ body {
   margin: 0px;
 }
 
+.button {
+  text-align: center;
+}
+
 .main {
   flex-grow: 1;
   margin: 30px;
