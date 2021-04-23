@@ -1,0 +1,111 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+@media screen and (max-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #100633;
+    color: white;
+    /* margin: 30px; */
+  }
+
+  header {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    background-image: url('https://cdn.pixabay.com/photo/2021/03/17/16/54/girl-6102865_960_720.jpg');
+    background-size: cover;
+    background-position-x: left;
+    text-shadow: 2px 2px 2px black;
+  }
+  
+  header p {
+    text-align: center;
+    font-size: 10vw;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: center;
+/*     background-color: goldenrod;
+ */    list-style-type: none;
+  }
+
+  header li {
+    margin-right: 15px;
+    color: white;
+    font-size: 6vw;
+  }
+
+  article p{
+    font-size: 4.5vw;
+  }
+
+  article, aside {
+    margin: 30px;
+  }
+
+  .aside-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .aside-two {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+  }
+
+  .aside-two ul {
+    list-style: none;
+  }
+
+  .aside-one h2{
+    display: flex;
+    justify-content: center;
+  }
+
+  .aside-one ul {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    list-style: none;
+    text-align: left;
+
+  }
+
+  .main-content h1 {
+    text-align: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e160a;
+    width: 100%;
+    
+  }
+
+  footer p {
+    margin: 15px 30px;
+    font-size: 4.5vw;
+    padding-bottom: 10px;
+    text-align: justify;
+  }
+
+  footer h3 {
+    margin-top: 10px;
+  }
+}
