@@ -1,0 +1,36 @@
+body {
+    background-color: turquoise;
+}
+
+#text {
+    max-width: 600px;
+    text-align: justify;
+    margin: auto;
+    line-height: normal ;
+    margin-top: 30px;
+}
+
+#title {
+    margin: auto;
+    text-align: center;
+    max-width: 600px;
+}
+
+#menu {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#item1 {
+    background-color: blue;
+}
+
+.input {
+    border: 1px solid #333;
+    margin: 10px 0;
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+  }
