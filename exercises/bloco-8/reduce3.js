@@ -91,4 +91,27 @@ function biggerNameBook(array) {
         return b;
 });
 }
-console.log(biggerNameBook());
+/* console.log(biggerNameBook()); */
+
+//exercício 5: Dado o array de nomes, retorne a quantidade de vezes em que aparecem a letra a maiúscula ou minúscula.
+const names = [
+  'Aanemarie', 'Adervandes', 'Akifusa',
+  'Abegildo', 'Adicellia', 'Aladonata',
+  'Abeladerco', 'Adieidy', 'Alarucha',
+];
+
+function containsA() {
+  // escreva seu código aqui
+  const lowerCase = names.map(element => element.toLowerCase().split('')).reduce((a, b) => a.concat(b));
+  const letterA = lowerCase.filter(element => element === 'a');
+  /* console.log(names.map(element => element.toLowerCase().split('')));
+  console.log(lowerCase); */
+  /* console.log(letterA); */
+  return letterA.length;
+}
+console.log(containsA());
+
+const testando =  names.reduce((acc, element) => {
+  return acc + element.toLowerCase().split('').filter(element => element === 'a').length}, 0);
+/* console.log(testando);
+ */
