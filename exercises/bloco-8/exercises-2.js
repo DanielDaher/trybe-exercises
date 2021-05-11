@@ -120,4 +120,4 @@ const nameOfOldBooks = (array) => array.map(element => element.name).sort();
 //exercício 7: Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais. Dica: cada inicial termina com um ponto.
 
 const bookOfThreeInitials = (array) => array.filter(element => element.author.name[1] + element.author.name[4] + element.author.name[7] === '...').map(element => element.name).toString();
-console.log(bookOfThreeInitials(books));
+/* console.log(bookOfThreeInitials(books)); */
