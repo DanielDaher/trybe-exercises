@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      //Exercicio 1
+      function createHeroTitle() {
+      let heroTitle = document.createElement('h1');
+      document.body.appendChild(heroTitle);
+      heroTitle.innerText = 'Exercício 5.2 - JavaScript DOM';
+    }
+    createHeroTitle();
+
+    //Exercicio 2
+    function createNewDivMain() {
+    	let newDiv = document.createElement('div');
+			newDiv.classList.add('main-content');
+			document.body.appendChild(newDiv);
+    }
+		createNewDivMain();
+
+		//Exercicio 3
+		function createDivCenter() {
+			let divMainLocation = document.querySelector('.main-content');
+			let newDiv = document.createElement('div');
+			newDiv.classList.add('center-content');
+			divMainLocation.appendChild(newDiv);
+		}
+		createDivCenter();
+
+	 //Exercicio 4
+	 function pTag() {
+		 let parag = document.createElement('p');
+		 parag.innerText = 'Parágrafo filho do Div Center';
+		let divCenterLocation = document.querySelector('.center-content');
+		divCenterLocation.appendChild(parag);
+	 }
+	 pTag();
+
+	 //Exercicio 5
+	 function divLeftContent() {
+		let divMainLocation = document.querySelector('.main-content');
+		let leftDiv = document.createElement('div');
+		divMainLocation.appendChild(leftDiv);
+		leftDiv.classList.add('left-content');
+	 }
+	 divLeftContent();
+
+	 //Exercicio 6
+	 function divRightContent() {
+		let divMainLocation = document.querySelector('.main-content');
+		let rightDiv = document.createElement('div');
+		divMainLocation.appendChild(rightDiv);
+		rightDiv.classList.add('right-content');
+	 }
+	 divRightContent();
+
+	 //Exercicio 7
+	 function image() {
+		 let picture = document.createElement('img');
+		 picture.classList.add('small-image');
+		 picture.src = 'https://picsum.photos/200';
+		 let leftDivLocation = document.querySelector('.left-content');
+		 leftDivLocation.appendChild(picture);
+	 }
+	 image();
+
+	 //Exercício 8
+	 function ulList() {
+		 let lista = document.createElement('ul');
+		 const num = ['zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+		 for (let i = 1; i < 11; i += 1) {
+			lista.innerHTML += '<li>' + num[i] + '</li>';
+		 }
+		 let rightDivLocation = document.querySelector('.right-content');
+		 rightDivLocation.appendChild(lista);
+	 }
+	 ulList();
+    </script>
+  </body>
+</html>

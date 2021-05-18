@@ -1,0 +1,38 @@
+/* input, select {
+  margin: 10px;
+  display: block;
+}
+
+span {
+  display: inline;
+}
+
+textarea {
+  display: block;
+} */
+
+.space {
+  width: 50%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: rgb(146, 192, 146);
+}
+
+.footer {
+  background-color: rgb(146, 192, 146);
+}
+
+.nova p {
+  background-color: rgb(146, 192, 146);
+  text-align: center;
+  color: whitesmoke;
+  border: whitesmoke solid;
+  width: 300px;
+  margin: 10px auto;
+}
+
+h1 {
+  text-align: center;
+}

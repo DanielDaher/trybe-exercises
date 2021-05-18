@@ -1,0 +1,193 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: rgb( 9, 15, 51);
+    color: white;
+    margin: 0px;
+  }
+
+  header {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('https://cdn.pixabay.com/photo/2021/03/17/16/54/girl-6102865_960_720.jpg');
+    background-position-x: center;
+    text-shadow: 2px 2px 2px black;
+    box-sizing: border-box;
+  }
+
+  .seta {
+    position: absolute;
+    width:0;
+    height:0;
+    border: 20px solid transparent;
+    display:block;
+    border-top-color:#fff;
+    bottom: 0px;
+    transform: translate(-50%);
+    left: 50%;
+}
+
+header p {
+  text-align: center;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+header li {
+  margin-right: 15px;
+  color: white;
+}
+
+article, aside {
+  margin: 30px;
+}
+
+hr {
+  width: 50%;
+  margin: 150px auto 120px;
+}
+
+#chapters {
+padding-top: 20px;
+}
+
+.aside-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.aside-two {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.aside-two ul {
+  list-style: none;
+}
+
+.aside-one h2{
+  display: flex;
+  justify-content: center;
+}
+
+.aside-one ul {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  list-style: none;
+  text-align: left;
+}
+
+.main-content h1 {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e160a;
+  width: 100%;
+}
+
+
+footer p {
+text-align: justify;
+}
+
+footer h3 {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  header { 
+    background-size: cover;
+
+  }
+  
+  header p {
+    font-size: 10vw;
+  }
+
+  header li {
+    font-size: 6vw;
+  }
+
+  article p{
+    font-size: 4.5vw;
+  }
+
+
+  footer p {
+    margin: 15px 30px;
+    font-size: 4.5vw;
+    padding-bottom: 10px;
+}
+}
+
+
+@media screen and (min-width: 701px) {  
+  header {
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+  }
+  
+  header p {
+    font-size: 3vw;
+  }
+  
+
+  
+  header li {
+    font-size: 1.4vw;
+    margin-bottom: 120px;
+  }
+  
+  article p{
+    font-size: 1.5vw;
+    width: 70%;
+    margin: 20px auto
+  }
+
+  .aside-one h2{
+    font-size: 2.5vw;
+  }
+  
+  .aside-one ul {
+    font-size: 1.4vw;
+  }
+  
+  .main-content h1 {
+    font-size: 3vw;
+  }
+  
+
+  
+  footer p {
+    margin: 15px 30px;
+    font-size: 1.5vw;
+    width: 70%;
+    padding-bottom: 15px;
+}
+}

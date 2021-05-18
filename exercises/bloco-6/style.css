@@ -1,0 +1,12 @@
+input, select {
+  margin: 10px;
+  display: block;
+}
+
+span {
+  display: inline;
+}
+
+textarea {
+  display: block;
+}

@@ -1,0 +1,15 @@
+.word {
+    position: absolute;
+    left: 70px;
+    top: 50px;
+    }
+
+    .speak {
+        position: absolute;
+        right: 1530px;
+        top: 2800px;
+    }
+
+    .bowser-body {
+        right: 500px;
+    }
