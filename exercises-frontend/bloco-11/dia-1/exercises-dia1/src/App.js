@@ -7,7 +7,7 @@ const hello = <h1>Hello exercício 1</h1>;
 
 function App() {
   return (
-    <div >
+    <div>
     {hello}
     <ul>
       { tarefas.map((tarefa) => Task(tarefa))}
