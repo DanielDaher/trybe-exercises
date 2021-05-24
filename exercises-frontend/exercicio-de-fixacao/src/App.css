@@ -1,0 +1,11 @@
+.helloWorld {
+  background-color: blueviolet;
+  color: white;
+  font-size: 50px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
