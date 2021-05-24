@@ -8,10 +8,14 @@ const hello = <h1>Hello exercício 1</h1>;
 function App() {
   return (
     <div>
-    {hello}
+      <div className = 'hero-title'> {hello} </div>
+
+      <div className = 'list'>
     <ul>
       { tarefas.map((tarefa) => Task(tarefa))}
     </ul>
+      </div>
+      <footer className = 'footer'>Made by</footer>
   </div>);
 }
 

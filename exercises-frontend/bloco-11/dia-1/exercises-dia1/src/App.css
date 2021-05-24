@@ -1,4 +1,20 @@
 body {
   background-color: gray;
   color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-title {
+  background-color: tomato;
+}
+
+.list {
+  background-color: purple;
+  min-height: 80vh;
+}
+
+.footer {
+  background-color: green;
+  text-align: center;
 }
