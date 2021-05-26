@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: silver;
+}
+
+.Poks {
+  display: flex;
+  flex-direction: column;
+  margin: solid black;
+  border: 1px solid;
+  min-height: 50px;
+  width: 470px;
+  border-radius: 5%;
+  margin: 36px;
+  background-color: wheat;
+}
+
+.blocos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
