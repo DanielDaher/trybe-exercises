@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: silver;
+}
+
+footer {
+  margin-top: 150px;
+}
+
+.Poks {
+  display: flex;
+  flex-direction: column;
+  margin: solid black;
+  border: 1px solid;
+  min-height: 50px;
+  width: 470px;
+  border-radius: 5%;
+  margin: 36px;
+  background-color: wheat;
+}
+
+.blocos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  display: flex;
+  align-self: center;
+  cursor: pointer;
+}
+
+.esquerda {
+  border-right-color: rgb(235, 235, 235);
+}
+
+.direita {
+  border-left-color: rgb(235, 235, 235);
+}
+
+.esquerda:hover {
+  border-right-color: rgb(255, 255, 255);
+}
+
+.direita:hover {
+  border-left-color: rgb(255, 255, 255);
+}
