@@ -3,11 +3,13 @@
 }
 
 body {
-  background-color: silver;
-}
-
-footer {
-  margin-top: 150px;
+  background-color: black;
+  background-image: url("https://cdn.pixabay.com/photo/2020/05/04/11/04/pokeball-5128709_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  background-attachment: fixed;
+  color: whitesmoke;
 }
 
 .Poks {
@@ -19,7 +21,7 @@ footer {
   width: 470px;
   border-radius: 5%;
   margin: 36px;
-  background-color: wheat;
+  background-color: rgba(235, 3, 3, 0.7);
 }
 
 .blocos {
@@ -56,4 +58,38 @@ span {
 
 .direita:hover {
   border-left-color: rgb(255, 255, 255);
+}
+
+li {
+  list-style: none;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.nav-bar {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.info {
+  margin-bottom: 40px;
 }
