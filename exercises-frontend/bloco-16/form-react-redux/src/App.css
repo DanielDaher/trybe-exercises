@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: #282c34;
+  color: white;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.formulario label {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+}
+
+.links {
+  text-decoration: none;
+  background-color: rgb(201, 201, 201);
+  color: #282c34;
+  min-width: 100px;
+  text-align: center;
+}
+
+.links:hover {
+  background-color: white;
+}
+
+.checkout-msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  font-size: 40px;
+}
+
+.link-in-checkout {
+  text-decoration: none;
+};
