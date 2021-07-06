@@ -8,7 +8,7 @@ class Home extends React.Component {
         const { toFetch } = this.props;
         return (
             <div>
-                <Link to='/characters'>Personagens</Link>
+                <Link to='/characters' className="links">Personagens</Link>
                 <button onClick={toFetch}>Fazer requisição</button>
             </div>
         );
