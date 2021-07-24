@@ -45,5 +45,15 @@
   display: flex;
   flex-direction: column-reverse;
   width: 300px;
+  height: 400px;
   margin: 10px;
+}
+
+.each-one p {
+  font-size: 27px;
+}
+
+.details-link {
+  text-decoration: none;
+  color: white;
 }
